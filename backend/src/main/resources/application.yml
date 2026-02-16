@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: patientvocate
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+# AI Configuration
+ai:
+  provider: openrouter
+  ollama:
+    base-url: http://localhost:11434
+    model: qwen2.5-coder:7b-instruct
+    timeout: 300 # Increase timeout to 5 minutes for slower local models
+  openrouter:
+    api-key: abcdefghijklmonop
+    model: arcee-ai/trinity-large-preview:free
+    timeout: 120
+
+# OCR Configuration
+ocr:
+  tessdata-path: ""
+  language: eng

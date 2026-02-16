@@ -1,0 +1,51 @@
+# Node / Frontend
+node_modules/
+dist/
+tmp/
+out-tsc/
+bazel-out/
+.npm/
+.eslintcache/
+.stylelintcache/
+package-lock.json (ignore if you want to keep versions flexible, but usually kept)
+# Actually, keep package-lock.json usually. I won't ignore it.
+
+# Java / Maven / Backend
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+.mvn/wrapper/*.jar
+!target/classes/static/
+!target/test-classes/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets / Configuration
+# Consider ignoring application.yml if it contains real API keys
+# backend/src/main/resources/application.yml
+
+# Python (if any)
+__pycache__/
+*.py[cod]
+*$py.class
